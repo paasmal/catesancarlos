@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Calendar, Bell, Users, BookOpen, ChevronRight, Clock } from 'lucide-react'
+import { Calendar, Bell, Users, BookOpen, ChevronRight, Clock, MapPin, DoorOpen } from 'lucide-react'
 import MainBanner from './_components/MainBanner'
 
 export default function PublicPortalHome() {
@@ -29,7 +29,7 @@ export default function PublicPortalHome() {
                     className='bg-white p-4 rounded-2xl shadow-md border border-zinc-100 flex items-center gap-3 hover:bg-zinc-50 transition'
                 >
                     <div className='w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0'>
-                        <Bell className='w-5 h-5' />
+                        <Users className='w-5 h-5' />
                     </div>
                     <span className='text-xs font-bold text-zinc-800 leading-tight'>Catequistas y grupos</span>
                 </Link>
@@ -40,13 +40,13 @@ export default function PublicPortalHome() {
                     className='bg-white p-4 rounded-2xl shadow-md border border-zinc-100 flex items-center gap-3 hover:bg-zinc-50 transition'
                 >
                     <div className='w-10 h-10 rounded-xl bg-amber-50/60 text-amber-800 flex items-center justify-center flex-shrink-0'>
-                        <Users className='w-5 h-5' />
+                        <MapPin className='w-5 h-5' />
                     </div>
                     <span className='text-xs font-bold text-zinc-800 leading-tight'>Distribucion de aulas</span>
                 </Link>
 
                 {/* Botón 4 */}
-                <Link
+                {/* <Link
                     href='/asistencia'
                     className='bg-white p-4 rounded-2xl shadow-md border border-zinc-100 flex items-center gap-3 hover:bg-zinc-50 transition'
                 >
@@ -54,17 +54,19 @@ export default function PublicPortalHome() {
                         <BookOpen className='w-5 h-5' />
                     </div>
                     <span className='text-xs font-bold text-zinc-800 leading-tight'>Asistencia Confirmación 2</span>
-                </Link>
+                </Link> */}
             </div>
 
+            <div className='mt-20 text-center'>Proximamente...</div>
+
             {/* 3. Últimos Avisos y Próximos Eventos */}
-            <div className='mt-8 px-4'>
+            {/* <div className='mt-8 px-4'>
                 <h2 className='text-base font-bold text-zinc-900 mb-3 font-sansation'>
                     Últimos Avisos y Próximos Eventos
                 </h2>
 
                 <div className='flex gap-3 overflow-x-auto pb-2 scrollbar-none'>
-                    {/* Tarjeta Evento 1 */}
+                    
                     <div className='min-w-[260px] bg-white border border-zinc-200/80 p-4 rounded-2xl shadow-sm flex flex-col justify-between'>
                         <div>
                             <div className='flex justify-between items-center mb-2'>
@@ -88,7 +90,7 @@ export default function PublicPortalHome() {
                         </div>
                     </div>
 
-                    {/* Tarjeta Evento 2 */}
+                    
                     <div className='min-w-[260px] bg-white border border-zinc-200/80 p-4 rounded-2xl shadow-sm flex flex-col justify-between'>
                         <div>
                             <div className='flex justify-between items-center mb-2'>
@@ -106,7 +108,7 @@ export default function PublicPortalHome() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* 4. Explore los Niveles */}
             {/* <div className='mt-8 px-4'>

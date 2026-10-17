@@ -3,12 +3,17 @@
 import Link from 'next/link'
 import PageName from '@/components/PageName'
 
-export default function PortalHeader() {
+interface PortalHeaderProps {
+    onOpenSidebar: () => void
+}
+
+export default function PortalHeader({ onOpenSidebar }: PortalHeaderProps) {
     return (
         <header className='w-full z-50 border-b border-zinc-200 bg-white relative'>
             <div className='max-w-7xl mx-auto px-4 h-14 flex items-center justify-between'>
                 {/* Menú hamburguesa */}
                 <button
+                    onClick={onOpenSidebar}
                     aria-label='Abrir menú'
                     className='p-2 -ml-2 text-zinc-800 hover:text-gray-900 transition-colors cursor-pointer'
                 >
@@ -36,7 +41,7 @@ export default function PortalHeader() {
                 </Link>
 
                 <svg
-                    className='w-6 h-6'
+                    className='w-6 h-6 opacity-0'
                     fill='none'
                     stroke='currentColor'
                     viewBox='0 0 24 24'
